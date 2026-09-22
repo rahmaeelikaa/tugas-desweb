@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #44b4ba;
-  --secondary-color: #d1d3d4;
-  --bg-color: #0a0a0a;
+  --primary-color: #e85d04;
+  --secondary-color: #f6bd60;
+  --bg-color: #fffaf3;
 }
 
 * {
@@ -20,7 +20,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg-color);
-  color: white;
+  color: #333;
   min-height: 2000px;
 }
 
@@ -31,7 +31,7 @@ body {
   align-items: center;
   padding: 1.4rem 7%;
   background-color: var(--bg-color);
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 1px solid #f0dfcc;
   position: fixed;
   top: 0;
   left: 0;
@@ -42,15 +42,15 @@ body {
 .navbar .logo-navbar {
   font-size: 2rem;
   font-weight: bold;
-  color: white;
+  color: #333;
 }
 
 .navbar .logo-navbar span {
-  color: #44b4ba;
+  color: var(--primary-color);
 }
 
 .navbar .navbar-nav a {
-  color: white;
+  color: #333;
   display: inline-block;
   font-size: 1.3rem;
   margin: 0 1rem;
@@ -74,7 +74,7 @@ body {
 }
 
 .navbar .navbar-extra a {
-  color: white;
+  color: #333;
   margin: 0 0.5rem;
 }
 
@@ -99,22 +99,21 @@ body {
 .hero .content {
   flex: 1;
   max-width: 60rem;
-  color: white;
+  color: #333;
 }
 
 .hero .content h1 {
-  font-size: 4em;
-  color: white;
+  font-size: 4rem;
+  color: #333;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 .hero .content p {
   font-size: 1.5rem;
   margin-top: 1rem;
-  line-height: 1.5;
-  font-weight: 100;
-  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
-  color: white;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #555;
 }
 
 .hero .content .cta {
@@ -189,8 +188,9 @@ body {
 .about .row .content p {
   margin-bottom: 0.8rem;
   font-size: 1.3rem;
-  font-weight: 100;
+  font-weight: 400;
   line-height: 1.6;
+  color: #666;
 }
 
 /* course section */
@@ -202,10 +202,11 @@ body {
 .course p,
 .contact p {
   text-align: center;
-  max-width: 30rem;
+  max-width: 35rem;
   margin: auto;
-  font-weight: 100;
+  font-weight: 400;
   line-height: 1.6;
+  color: #666;
 }
 
 .course .row {
@@ -216,17 +217,17 @@ body {
 }
 
 .menu-card {
-  background-color: var(--bg-color);
-  border: 1px solid #222;
+  background-color: white;
+  border: 1px solid #eee;
   border-radius: 1rem;
   overflow: hidden;
   transition: 0.3 ease;
 }
 
 .menu-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-5px);
   border-color: var(--primary-color);
-  box-shadow: 0 10px 30px rgba(68, 180, 186, 0.15);
+  box-shadow: 0 10px 30px rgba(232, 93, 4, 0.15);
 }
 
 .menu-card img {
@@ -242,13 +243,13 @@ body {
 
 .menu-card-content span {
   display: inline-block;
-  color: white;
+  color: var(--primary-color);
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.7rem;
 }
 .menu-card-content p {
-  color: white;
+  color: #555;
   font-size: 1.1rem;
   line-height: 1.5;
   margin-bottom: 1rem;
@@ -260,14 +261,14 @@ body {
 
 .menu-card-content small {
   display: block;
-  color: white;
+  color: #777;
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
 
 .menu-card-content strong {
   display: block;
-  color: white;
+  color: #333;
   font-size: 1.3rem;
   margin-bottom: 1rem;
 }
@@ -277,7 +278,7 @@ body {
   text-align: center;
   padding: 0.8rem 1rem;
   background-color: var(--primary-color);
-  color: black;
+  color: white;
   border-radius: 0.5rem;
   font-size: 1rem;
   font-weight: 600;
@@ -293,7 +294,9 @@ body {
 .contact .row {
   display: flex;
   margin-top: 2rem;
-  background-color: #222;
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .contact .row .map {
@@ -312,8 +315,8 @@ body {
   display: flex;
   align-items: center;
   margin-top: 2rem;
-  background-color: var(--bg-color);
-  border: 1px solid #eee;
+  background-color: #fffaf3;
+  border: 1px solid #ddd;
   padding-left: 2rem;
 }
 
@@ -322,7 +325,21 @@ body {
   padding: 2rem;
   font-size: 1.7rem;
   background: none;
-  color: white;
+  color: #333;
+}
+
+.contact .row form .input-group textarea {
+  align-items: flex-start;
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  font-family: "Poppins", sans-serif;
+  background: none;
+  color: #333;
+  border: none;
+  outline: none;
+  resize: vertical;
+  min-height: 10rem;
 }
 
 .contact .row form button {
@@ -349,7 +366,7 @@ footer .socials {
 }
 
 footer .socials a {
-  color: white;
+  color: #333;
   margin: 1rem;
 }
 footer .socials a:hover,
@@ -362,7 +379,7 @@ footer .links {
 }
 
 footer .links a {
-  color: white;
+  color: #333;
   padding: 0.7rem 1rem;
 }
 
