@@ -15,4 +15,4 @@ Website bertema foodie yang menjadi ruang eksplorasi kuliner dengan tampilan vis
 ## Fitur dan Perubahan
 
 - Redesign tampilan antarmuka (UI).
-- Penyesuaian konten pembelajaran.
+- Penyesuaian konten.
